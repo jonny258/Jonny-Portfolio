@@ -45,7 +45,7 @@ canvas {
 
 
 a {
-  background-color: #000;
+  /* background-color: #000; */
   cursor: url('../assets/svg/white-circle.svg') 12 12, auto;
 }
 
