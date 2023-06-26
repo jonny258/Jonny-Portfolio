@@ -22,6 +22,24 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   cursor: url('../assets/svg/white-circle-ring.svg') 12 12, auto;
 }
 
+.svg-footer{
+  margin-bottom: -5px;
+}
+
+/* this is for the nural network */
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+  z-index: -1;
+  /* height: 130vh; */
+  width: 130vw;
+  height: 100vh;
+
+}
+
+/* this is for the nural network */
 /* This is for the cursor */
 
 
@@ -578,14 +596,15 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(
+  /* background: linear-gradient(
       to right,
       rgba(0, 98, 185, 0.8),
       rgba(0, 98, 185, 0.8)
     ),
-    url(../../assets/svg/common-bg.svg);
-  background-size: cover;
-  background-position: center;
+    url(../../assets/svg/common-bg.svg); */
+  /* background-size: cover;
+  background-position: center; */
+  z-index: 1;
   position: relative;
 }
 @media only screen and (max-width: 37.5em) {
@@ -612,6 +631,14 @@ textarea {
   margin: 3rem auto 0 auto;
   max-width: 80rem;
 }
+#project-heading{
+  font-size: 80px;
+}
+.project-heading-text{
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+
 .project-cs-hero__cta {
   margin-top: 5rem;
   text-align: center;
