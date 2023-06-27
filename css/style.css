@@ -19,7 +19,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   padding: 0;
   box-sizing: inherit;
   font-family: inherit;
-  cursor: url('../assets/svg/white-circle-ring.svg') 12 12, auto;
+  /* cursor: url('../assets/svg/white-circle-ring.svg') 12 12, auto; */
 }
 
 .svg-footer{
@@ -33,10 +33,7 @@ canvas {
 	top: 0;
 	left: 0;
   z-index: -1;
-  /* height: 130vh; */
-  width: 130vw;
   height: 100vh;
-
 }
 
 /* this is for the nural network */
@@ -44,8 +41,7 @@ canvas {
 
 
 
-a {
-  /* background-color: #000; */
+/* a {
   cursor: url('../assets/svg/white-circle.svg') 12 12, auto;
 }
 
@@ -64,7 +60,7 @@ a {
   animation-name: cursor-transition;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-}
+} */
 
 
 /* This is for the cursor */
@@ -493,11 +489,12 @@ textarea {
 
 .contact {
   background: linear-gradient(
-      to right,
-      rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+      to bottom,
+      rgba(84, 58, 183, .8),
+      rgba(0, 172, 193, .5),
+      rgba(255, 255, 255, 0.8)
+    );
+
   background-size: cover;
   background-position: center;
 }
@@ -596,14 +593,14 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  /* background: linear-gradient(
+  background: linear-gradient(
       to right,
       rgba(0, 98, 185, 0.8),
       rgba(0, 98, 185, 0.8)
     ),
-    url(../../assets/svg/common-bg.svg); */
-  /* background-size: cover;
-  background-position: center; */
+    url(../assets/svg/common-bg.svg);
+   background-size: cover;
+  background-position: center;
   z-index: 1;
   position: relative;
 }
@@ -633,10 +630,6 @@ textarea {
 }
 #project-heading{
   font-size: 80px;
-}
-.project-heading-text{
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 20px;
 }
 
 .project-cs-hero__cta {

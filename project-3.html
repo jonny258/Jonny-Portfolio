@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Case Study of Project 3</title>
+    <title>Note Taker</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gradient-border.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,21 +17,28 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
+    <!-- <canvas id="c" class="dynamicBg"></canvas> -->
+
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
+              src="./assets/jpeg/0818-Compressed.jpg"
               alt="Ram Maheshwari Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Jonny Olsen</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
+            <li class="header__link-wrapper">
+              <!-- Add a download icon here from font awesome -->
+              <a href="./assets/pfd/RESUME - Jonathan Olsen - Web Development.pdf" download class="header__link"> Resume </a>
+            </li>
             <li class="header__link-wrapper">
               <a href="./index.html" class="header__link"> Home </a>
             </li>
@@ -82,14 +90,15 @@
         </div>
       </div>
     </header>
+    <div id="nav-hover">
+      <h4>Show Nav</h4>
+    </div>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 3</h1>
+        <h1 class="heading-primary" id="project-heading">Note-Taker</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            This application is a simple note-taking app that allows users to create, save, view, and delete notes.
           </p>
         </div>
         <div class="project-cs-hero__cta">
@@ -102,58 +111,75 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
+              src="./assets/png/Note-taker-laptop.png"
               alt="Project Image"
               class="project-details__showcase-img"
             />
           </div>
+
           <div class="project-details__content-main">
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                <strong>Saving Notes:</strong>
+                <br>
+                Users can enter a new note's title and text in the right-hand column of the Notes page.
+                As soon as a new note is entered, a Save icon dynamically appears in the navigation bar at the top of the page, indicating that the note can be saved.
+                Clicking on the Save icon triggers the saving process, which adds the new note to the list of existing notes in the left-hand column.
+                This feature ensures that users can securely save their notes for future reference.
               </p>
+              
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
+                <strong>Viewing Notes:</strong>
+                <br>
+                The left-hand column of the Notes page displays a list of existing notes.
+                Users can easily access their previously created notes by clicking on any note in the list.
+                Clicking on a specific note dynamically loads its title and text in the right-hand column, allowing users to conveniently view and edit their notes.
+                This feature enables quick access and seamless viewing of stored notes, facilitating efficient note management.
               </p>
+              
+              <p class="project-details__desc-para">
+                <strong>Creating New Notes:</strong>
+                <br>
+                The Write icon in the navigation bar provides users with a straightforward way to create new notes.
+                Clicking on the Write icon instantly presents users with empty fields to enter a new note's title and text in the right-hand column.
+                Users can begin typing their thoughts or important information right away, streamlining the note creation process.
+                This feature promotes a smooth and intuitive user experience, encouraging users to capture their ideas without any obstacles.
+              </p>
+              
+              <p class="project-details__desc-para">
+                <strong>Deleting Notes:</strong>
+                <br>
+                Each note in the list displayed in the left-hand column has a Delete icon next to it.
+                Users can remove unwanted notes from their collection by simply clicking on the Delete icon corresponding to a specific note.
+                Upon deletion, the note is promptly removed from the list, and the right-hand column is cleared to make way for other notes.
+                This feature provides users with control over their note collection, enabling them to easily manage and declutter their notes.
+              </p>
+              
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill rainbow">HTML</div>
+                <div class="skills__skill rainbow">CSS</div>
+                <div class="skills__skill rainbow">JavaScript</div>
+                <div class="skills__skill rainbow">JSON</div>
+                <div class="skills__skill rainbow">Node JS</div>
+                <div class="skills__skill rainbow">GIT</div>
+                <div class="skills__skill rainbow">Express JS</div>
+                <div class="skills__skill rainbow">Heroku</div>
               </div>
             </div>
             <div class="project-details__links">
               <h3 class="project-details__content-title">See Live</h3>
               <a
-                href="#"
+                href="https://jonny-note-taker.herokuapp.com/"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
                 >Live Link</a
               >
               <a
-                href="#"
+                href="https://github.com/jonny258/Note-Taker"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Code Link</a
@@ -163,6 +189,17 @@
         </div>
       </div>
     </section>
+    <svg
+    class="svg-footer"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 320"
+  >
+    <path
+      fill="#000000"
+      fill-opacity="1"
+      d="M0,128L48,149.3C96,171,192,213,288,197.3C384,181,480,107,576,117.3C672,128,768,224,864,245.3C960,267,1056,213,1152,197.3C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+    ></path>
+  </svg>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -171,21 +208,21 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jonathan-olsen3/">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://github.com/jonny258">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://twitter.com/Jonatha46796454">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/twitter-ico.png"
@@ -199,32 +236,19 @@
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Jonny Olsen</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Full Stack Web Developer. Open to new opportunities. Let's build
+              something great together!
             </p>
           </div>
         </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
       </div>
     </footer>
+    <script src="./nural.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
