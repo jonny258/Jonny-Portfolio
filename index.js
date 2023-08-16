@@ -65,4 +65,16 @@ header.addEventListener('mouseleave', function() {
 
 
 
+//Hide and display the stuff
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+  const otherProjects = document.getElementById('otherProjects');
+  if (otherProjects.style.display === 'none') {
+      otherProjects.style.display = 'block';
+  } else {
+      otherProjects.style.display = 'none';
+  }
+});
+
+
 

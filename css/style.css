@@ -488,15 +488,18 @@ textarea {
 }
 
 .contact {
-  background: linear-gradient(
+  color: #fff;
+  background: 
+  linear-gradient(
       to bottom,
-      rgba(84, 58, 183, .8),
-      rgba(0, 172, 193, .5),
-      rgba(255, 255, 255, 0.8)
-    );
-
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 255, 255, 1)
+    ),
+    url(../assets/png/contact-background.png);
   background-size: cover;
   background-position: center;
+  z-index: 1;
+  position: relative;
 }
 .contact__form-container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -592,18 +595,54 @@ textarea {
 }
 
 .project-cs-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;     
+  position: relative;
   color: #fff;
-  background: linear-gradient(
-      to right,
-      rgba(0, 98, 185, 0.8),
-      rgba(0, 98, 185, 0.8)
-    ),
-    url(../assets/svg/common-bg.svg);
-   background-size: cover;
+  z-index: 1;
+  height: 80vh;
+}
+
+.project-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  height: 80vh;
+  filter: brightness(30%);
+}
+
+.project-content-center {
+  position: relative; /* Makes sure it's on top of the background */
+  z-index: 2;
+  text-align: center; /* Centers the text elements */
+}
+
+#project-two{
+  background: 
+    url(../assets/png/Forest-tech-blog\ background.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    filter: brightness(100%);
+}
+
+#project-one{
+  background: 
+  url(../assets/png/tys-vault-background.png);
+  background-size: cover;
   background-position: center;
   z-index: 1;
   position: relative;
+  filter: brightness(100%);
 }
+
 @media only screen and (max-width: 37.5em) {
   .project-cs-hero {
     height: unset;
