@@ -22,10 +22,6 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   /* cursor: url('../assets/svg/white-circle-ring.svg') 12 12, auto; */
 }
 
-.svg-footer{
-  margin-bottom: -5px;
-}
-
 /* this is for the nural network */
 
 canvas {
@@ -185,6 +181,10 @@ textarea {
 .heading-sec__main--lt::after {
   content: "";
   background: #fff !important;
+}
+.heading-sec__main--lt-contact::after {
+  content: "";
+  background: #000000 !important;
 }
 .heading-sec__main::after {
   content: "";
@@ -487,15 +487,13 @@ textarea {
   }
 }
 
+#contactDark{
+  color: #000;
+  z-index: 10;
+}
+
 .contact {
   color: #fff;
-  background: 
-  linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(255, 255, 255, 1)
-    ),
-    url(../assets/png/contact-background.png);
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -762,7 +760,7 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  top: -100%; /* Initially positioned above the screen */
+  top: 0; /* Initially positioned above the screen */
   background: #000;
   background: #fff;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
@@ -998,6 +996,10 @@ textarea {
   border-radius: 5px;
   font-weight: 600;
   color: #777;
+}
+
+.svg-footer {
+  margin-bottom: -5px;
 }
 
 .mouse {
