@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.cursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.cursor--large {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(69, 42, 147, 1);
+}
+
+.cursor--small {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(69, 42, 147, 1);
+    transform: translate(-50%, -50%);
+}
+
+
+.btn {
+
+    transition: background 200ms ease, color 200ms ease;
+    cursor: none;
+}
+
+.btn:hover, .home-hero__social-icon:hover {
+    filter: brightness(1.1); /* 0.8 will make it 20% darker */
+}
+
+
+.support {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.support a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.8rem;
+    backface-visibility: hidden;
+    transition: all 150ms ease;
+}
+
+.support a:hover {
+    transform: scale(1.1);
+}
